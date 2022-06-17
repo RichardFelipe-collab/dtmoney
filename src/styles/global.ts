@@ -4,13 +4,14 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #f0f2f5;
     --red:#E52E4D;
+    --green:#33cc95;
     --blue:#5429cc;
 
     --blue-light: #6933ff;
 
     --text-title:#363F5F;
     --text-body:#969cb3;
-    --shape:#ffffff;
+    --shape:#FFFFFF;
   }
   
   *{
@@ -40,8 +41,8 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
   body{
-    background:var(---background);
-    -webkit-font-smoothing:antiaLiased; //deixa fonte top
+    background: var(--background);
+    -webkit-font-smoothing:antialiased; //deixa fonte top
   }
   button{
     cursor: pointer;

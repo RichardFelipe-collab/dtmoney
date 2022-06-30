@@ -1,14 +1,16 @@
 import { useEffect } from "react";
+import { api } from "../../services/axios";
 import { Container } from "./styles";
 
 export function TransactionTable() {
+  useEffect(() => {
+    api
+      .get("http://localhost:3000/api/transactions")
+      .then((response) => console.log(response.data));
+  }, []);
 
-  useEffect(()=>{
-    fetch('http://localhost:3000/api/transactions')
-    .then(response => response.json())
-    .then(data => console.log(data))
-},[])
-  return(
+
+  return (
     <Container>
       <table>
         <thead>
@@ -22,13 +24,13 @@ export function TransactionTable() {
 
         <tbody>
           <tr>
-            <td > Desenvolvimento de website</td>
+            <td> Desenvolvimento de website</td>
             <td className="deposit"> R$12.000</td>
             <td> Serviço</td>
             <td> 19/05/2022</td>
           </tr>
           <tr>
-            <td > Aluguel de casa</td>
+            <td> Aluguel de casa</td>
             <td className="withdraw"> - R$4.000</td>
             <td> Custos</td>
             <td> 18/05/2022</td>
@@ -42,5 +44,5 @@ export function TransactionTable() {
         </tbody>
       </table>
     </Container>
-  )
+  );
 }

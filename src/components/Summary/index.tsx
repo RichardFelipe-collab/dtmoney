@@ -1,11 +1,27 @@
 import { Container } from "./styles";
+import {useContext} from 'react'
 import iconimg from '../../assets/Entradas.svg'
 import outconimg from '../../assets/Saídas.svg'
 import totaliconimg from '../../assets/Total.svg'
+import {TransactionsContext} from '../../TransactionsContext';
 
 export function Summary() {
+  const data = useContext(TransactionsContext)
+
+
   return (
     <Container>
+      <TransactionsContext.Consumer>
+
+        {(data)=>{
+          
+            console.log(data)
+
+            return <p>ok</p>
+          
+        }}
+      </TransactionsContext.Consumer>
+
       <div>
         <header>
           <p>Entrada</p>

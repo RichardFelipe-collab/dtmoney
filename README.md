@@ -4,4 +4,5 @@ Desenvolvido durante o ignite
 React, Styled-components, MirageJs
 
 
-![dt 6](https://user-images.githubusercontent.com/54228659/221974039-cfaeb9a8-ea97-403b-a5dd-e779832badfa.png)
+![dt 6](https://user-images.githubusercontent.com/54228659/221975074-8aaf3cb4-8e0e-4787-9606-fb3d059ec412.png)
+

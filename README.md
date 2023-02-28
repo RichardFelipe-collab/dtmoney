@@ -1,4 +1,4 @@
-#DT-money
+# DT-money
 Desenvolvido durante o ignite
 ## Tecnologias
 React, Styled-components, MirageJs
